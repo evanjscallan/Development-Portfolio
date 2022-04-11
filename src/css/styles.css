@@ -18,6 +18,16 @@
 		
 	}
 
+	.cir-menu button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	}
+
 	.title-text{
 		width: 70%;
 		text-align: center;
@@ -419,7 +429,7 @@
 	}
 	.about-bottom{
 		
-		transform: translateY(-9vh);
+		transform: translateY(-10vh);
 		transition: 1.5s ease;
 		transition-delay: 1s;
 	}
@@ -468,7 +478,6 @@
 	.middle-cir{
 		position: relative;
 
-
 	}
 
 
@@ -489,12 +498,11 @@
 		visibility: visible;
 		z-index: 4;
 		transition: visibility .5s, opacity 1s ease;
-
 	}
 
 	.contact-outer h1{
 		top: 0;
-		margin-top: 2em;
+		margin-top: 8em;
 		position: absolute;
 		opacity: 100
 	}
@@ -502,9 +510,10 @@
 
 	.contact-outer-none h1{
 		top: 0;
-		margin-top: 2em;
+		margin-top: 8em;
 		position: absolute;
 	}
+
 
 
 
@@ -681,10 +690,6 @@
 	}
 
 
-
-
-
-
 	.skills-page{
 		position: absolute;
 		height: 110vh;
@@ -745,6 +750,7 @@
 
 	.list-ind{
 		font-size: 2rem;
+		margin-left: 3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -755,7 +761,7 @@
 	}
 
 	.list-ind:hover{
-		color: red;
+		color: lightblue;
 	}
 
 	
@@ -771,7 +777,8 @@
 		height: 30px;
 		color: black;
 		position: relative;
-		background-color: #CD5A57;
+
+		background-color: #F1968D;
 		left: 0;
 		display: flex;
 		flex-direction: row;

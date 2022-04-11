@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import "./../css/styles.css";
 import Button from "./Button";
 
@@ -11,7 +11,7 @@ const WorkInfo = (props) => {
 					<div className='work-text'>
 					<h2 className="work-descrip">{props.title}</h2>
 					<p className="work-descrip">{props.description}</p>
-					<Button sitelink={props.siteLink2} text="LEARN MORE"/>
+					<Button sitelink={props.siteLink} text="LEARN MORE"/>
 					</div>
 				</div>
 				<img
@@ -26,3 +26,8 @@ const WorkInfo = (props) => {
 };
 
 export default WorkInfo;
+
+
+//https://mhfinder.netlify.app/
+
+*/

@@ -2,24 +2,18 @@ import React from 'react'
 import "./../css/styles.css";
 
 
-const Button = (props,e) => {
-	const proper = props.siteLink2
-
-		function btnClick(props){
-			//TEST LINK - NEED TO PASS PROPS
-			window.open('https://orcasound.net')
-			console.log(props.siteLink2)
-}
-
-
+function Button(props){
+	console.log("WORKER PROPS: " + props.worker)
 	return (
+		<React.Fragment>
 		
 		<button
-		
-		onClick={(e) => btnClick(e)}
+		onClick={(e)=>{window.open(props.worker)}}
 		className="learn-more">
 		{props.text}
 		</button>
+	
+		</React.Fragment>
 	
 		)
 }

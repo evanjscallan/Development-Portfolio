@@ -22,7 +22,7 @@ export default function Contact(props, contactState){
 		return(	
 		<React.Fragment>
 			<div className={setContactVisible ? 'contact-outer' : 'contact-outer-none'}>	
-			<h1>Let's get in touch.</h1>
+			<h1 className='contact-head-text'>Let's get in touch.</h1>
 			<div   className='menu-container'></div>
 			<div className='cir-menu'>
 				<span ref={targetRef} className={props.contactState ? 'cir-a': 'cir-a-min'}>

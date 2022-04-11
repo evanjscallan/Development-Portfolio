@@ -32,7 +32,6 @@ export default class Index extends React.Component {
 			setWorkVisible: !prevState.setWorkVisible,
 			navState: !prevState.navState
 		}));
-		console.log('clicked')
 	}
 
 	handleAbout(event) {
@@ -108,9 +107,6 @@ export default class Index extends React.Component {
 			workState={setWorkVisible}
 		/>
 		
-			
-	
-
 		<div className={setContactVisible ? "hidden" : "index-middle"}>
 			<h1 className="font-primary title-text ">
 				Evan Scallan is a developer who makes smooth-running, responsive

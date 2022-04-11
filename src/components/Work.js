@@ -5,6 +5,8 @@ import languageImg from "./../img/emis_mockup.webp";
 import healthImg from "./../img/mh_placeholder_tablet.webp";
 import battleImg from "./../img/battle_desktop_orange.webp";
 import "./../css/styles.css";
+import PropTypes from 'prop-types'
+
 
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -14,8 +16,9 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 export default function Work(props, styles) {
 	const setWorkVisible = props.workState;
 
-
 	const WorkInfo = (props) => {
+		console.log("SITELINK PROPS: " + props.wtf)
+	
 	return (
 		<React.Fragment>
 			
@@ -24,7 +27,11 @@ export default function Work(props, styles) {
 					<div className='work-text'>
 					<h2 className="work-descrip">{props.title}</h2>
 					<p className="work-descrip">{props.description}</p>
-					<Button sitelink2={props.siteLink} text="LEARN MORE"/>
+						
+							<Button
+							text="LEARN MORE"
+							worker={props.wtf}/>
+						
 					</div>
 				</div>
 				<img
@@ -42,7 +49,8 @@ export default function Work(props, styles) {
 		<React.Fragment>
 			
 
-				<div className="work-bottom-l"
+				<div 
+				className="work-bottom-l"
 						style={
 						setWorkVisible
 							? { transform: `translateY(${200}%)` }
@@ -51,7 +59,7 @@ export default function Work(props, styles) {
 						<WorkInfo
 							bgImage={healthImg}
 							title="Mental Health Finder"
-
+							wtf='https://mhfinder.netlify.app/' 
 							description="Helps users find local mental heathcare providers in their area. Google Geocode/Maps API combined with data-mined directory."
 							bgAltText='The words "mental health" written on a clipboard.'/>
 					</div>
@@ -66,7 +74,7 @@ export default function Work(props, styles) {
 						<WorkInfo
 							bgImage={orcaImg}
 							title="Orcahome"
-							siteLink="https://www.orcasound.net/"
+							wtf='https://orcasound.net' 
 							description="Front-End developer for React App. Coordinating with team to integrate front-end website with app."
 							bgAltText="Orca whales swimming in the ocean."/>
 					</div>
@@ -82,6 +90,7 @@ export default function Work(props, styles) {
 						<WorkInfo
 							bgImage={battleImg}
 							title="Github Battle"
+							wtf='https://github.com' 
 							description="It's Battle time. Utilizing React and Github API to compare user data in the form of a game."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
@@ -97,6 +106,7 @@ export default function Work(props, styles) {
 						<WorkInfo
 							bgImage={languageImg}
 							title="The Emissary"
+							wtf='https://emissarytranslator.herokuapp.com/' 
 							description="Language translator with a retro twist. Deployed on Heroku."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
@@ -109,4 +119,3 @@ export default function Work(props, styles) {
 }
 
 							
-						
