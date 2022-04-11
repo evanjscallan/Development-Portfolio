@@ -37,19 +37,16 @@ export default function Work(props, styles) {
 				<img
 					src={props.bgImage}
 					alt={props.bgAltText}/>
-				</div>
-
-				
-			
+				</div>	
 		</React.Fragment>
 	);
 };
 
 	return (
-		<React.Fragment>
+		
 			
-
-				<div 
+			<section>
+				<article 
 				className="work-bottom-l"
 						style={
 						setWorkVisible
@@ -63,9 +60,9 @@ export default function Work(props, styles) {
 							description="Helps users find local mental heathcare providers in their area. Google Geocode/Maps API combined with data-mined directory."
 							bgAltText='The words "mental health" written on a clipboard.'/>
 					</div>
-				</div>
+				</article>
 
-				<div className="work-bottom-r"
+				<article className="work-bottom-r"
 						style={
 						setWorkVisible
 							? { transform: `translateY(${200}%)` }
@@ -78,10 +75,10 @@ export default function Work(props, styles) {
 							description="Front-End developer for React App. Coordinating with team to integrate front-end website with app."
 							bgAltText="Orca whales swimming in the ocean."/>
 					</div>
-				</div>
+				</article>
 
 
-				<div className="work-top-l"
+				<article className="work-top-l"
 						style={
 						setWorkVisible
 							? { transform: `translateY(${-100}%)` }
@@ -94,9 +91,9 @@ export default function Work(props, styles) {
 							description="It's Battle time. Utilizing React and Github API to compare user data in the form of a game."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
-				</div>
+				</article>
 
-				<div className="work-top-r"
+				<article className="work-top-r"
 						style={
 						setWorkVisible
 							? { transform: `translateY(${-100}%)` }
@@ -110,11 +107,8 @@ export default function Work(props, styles) {
 							description="Language translator with a retro twist. Deployed on Heroku."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
-				</div>
-
-
-		
-		</React.Fragment>
+				</article>
+			</section>
 	);
 }
 

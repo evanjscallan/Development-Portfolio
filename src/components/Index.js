@@ -105,7 +105,7 @@ export default class Index extends React.Component {
 			workState={setWorkVisible}
 		/>
 		
-		<div className={setContactVisible ? "hidden" : "index-middle"}>
+		<head className={setContactVisible ? "hidden" : "index-middle"}>
 			<h1 className="font-primary title-text ">
 				Evan Scallan is a developer who makes smooth-running, responsive applications.
 			</h1>
@@ -115,7 +115,7 @@ export default class Index extends React.Component {
 			onClick={this.handleClick}
 			>VIEW MORE</button>
 			 
-		</div>	
+		</head>	
 	</div>
 	</React.Fragment>
 </div>

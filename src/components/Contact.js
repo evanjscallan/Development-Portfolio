@@ -21,14 +21,13 @@ export default function Contact(props, contactState){
 
 		return(	
 		<React.Fragment>
-			<div className={setContactVisible ? 'contact-outer' : 'contact-outer-none'}>	
+			<address className={setContactVisible ? 'contact-outer' : 'contact-outer-none'}>	
 			<h1 className='contact-head-text'>Let's get in touch.</h1>
 			<div   className='menu-container'></div>
 			<div className='cir-menu'>
 				<span ref={targetRef} className={props.contactState ? 'cir-a': 'cir-a-min'}>
 					<a href='https://www.instagram.com/evan_scallan/'><p className='cir-a-text'></p><img className='contact-icon' src={instagram} alt='Instagram icon'></img></a>
 				</span>
-
 				<div onClick={backBtn}><img className='nav-icon-ctr' src={xMark} alt='hamburger'></img></div>
 				<span ref={targetRef} className={props.contactState ? 'cir-b' : 'cir-b-min'}>
 					<a href='evanjscallan@gmail.com'><img className='contact-icon' src={google} alt='Email icon'></img></a>
@@ -43,10 +42,7 @@ export default function Contact(props, contactState){
 					<a href='https://www.flickr.com/people/142014826@N07/'><img className='contact-icon' src={flickr} alt='Email icon'></img></a>
 				</span>
 			</div>
-
-			
-
-		</div>
+		</address>
 		
 	</React.Fragment>
 		)
