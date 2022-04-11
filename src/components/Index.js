@@ -76,8 +76,6 @@ export default class Index extends React.Component {
 	render(props) {
 		let handleWork = this.handleClick;
 		let { setWorkVisible, setAboutVisible, setContactVisible, navState } = this.state
-
-		console.log("NAVSTATE: " + navState)
 		return (
 			
 <div>
@@ -109,11 +107,14 @@ export default class Index extends React.Component {
 		
 		<div className={setContactVisible ? "hidden" : "index-middle"}>
 			<h1 className="font-primary title-text ">
-				Evan Scallan is a developer who makes smooth-running, responsive
-				web applications.
+				Evan Scallan is a developer who makes smooth-running, responsive applications.
 			</h1>
 			<img className="index-img" src={indexImg} alt=""/>
-			<Button text="VIEW MORE" click={this.handleClick.bind(this)} />
+			<button 
+			className="learn-more"
+			onClick={this.handleClick}
+			>VIEW MORE</button>
+			 
 		</div>	
 	</div>
 	</React.Fragment>
@@ -122,50 +123,3 @@ export default class Index extends React.Component {
 		);
 	}
 }
-
-/*<img className='profile-photo' src={Photo} alt='profile photo'></img>*/
-/*<a className='view-more font-secondary'>View My Work</a>*/
-
-/*		<nav className='top-box'>
-					<img 
-					src={Hamburger} 
-					alt='Nav hamburger' 
-					className='hamburger row align-left'
-					onClick={this.props.handleNav}
-					/>
-				</nav>*/
-
-/*<a className='view-more font-secondary'>View My Work</a>*/
-
-
-
-
-///OLD NAV
-
-/*					<span className={setContactVisible ? "hidden" : "index-top"}>
-						<span className="nav-container-l">
-							<button 
-							className='noButtonStyle' 
-							onClick={(e) => this.handleClick()}>WORK</button>
-						</span>
-						<span className="nav-container-r">
-							<Nav navState={setNavVisible}/>
-							<button 
-							className='noButtonStyle'   
-							onClick={(event) => this.handleAbout()}>ABOUT</button>
-							<button className='contact-btn noButtonStyle' 
-							onClick={(event2) => this.handleContact()}>CONTACT</button>
-						</span>
-					</span> */
-
-/*
-<Contact
-		contactState={setContactVisible}
-		navState={this.state.navState}
-		backBtn={this.handleContact.bind(this)}
-	/>
-*/
-//NEED TO FIGURE OUT FUNCTIONALITY FOR UNIVERSAL NAV BUTTON - REFACTOR
-//Pass from child to parent? (best possible route)
-//OR have navbar on a higher level than index (may lead to inefficiencies but could also save time)
-//
