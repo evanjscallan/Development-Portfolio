@@ -1,3 +1,11 @@
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+
 
 
 
@@ -219,7 +227,6 @@
 	}
 
 	.learn-more{
-
 		background-color: #F4ECDD;
 		color: #535350;
 		font-size: 2vh;
@@ -797,8 +804,6 @@
 
 
 /*NAV*/
-
-
 	.nav-menu{
 		position: absolute;
 		visibility: visible !important;

@@ -10,11 +10,7 @@ import { BsChevronExpand } from 'react-icons/bs'
 import { IconContext } from 'react-icons'
 
 import aboutImg from "./../img/evanscallan.png";
-import snekImg from "./../img/8bitskills/python.gif";
-import reactImg from "./../img/8bitskills/react.gif";
-import javascriptImg from "./../img/8bitskills/javascript.gif";
-import flaskImg from "./../img/8bitskills/flask.gif";
-import SQLImg from "./../img/8bitskills/SQL.gif";
+
 
 import Draggable, { DraggableCore } from "react-draggable"; // Both at the same time
 

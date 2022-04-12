@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "./../img/prflio.png";
 import "./../css/styles.css";
 import indexImg from "./../img/about_front_photo.jpeg";
 import Contact from './Contact'
@@ -68,11 +67,7 @@ export default class Index extends React.Component {
 			setContactVisible: false,
 			navState: !prevState5.navState,
 		}))
-	}
-
-
-
-	
+	}	
 	render(props) {
 		let handleWork = this.handleClick;
 		let { setWorkVisible, setAboutVisible, setContactVisible, navState } = this.state
