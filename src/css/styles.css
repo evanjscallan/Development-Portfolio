@@ -279,10 +279,6 @@
 		transition: transform 1s ease, filter 1s ease;
 	}
 
-	.work-bottom-l:hover{
-		
-	}
-
 
 	.work-bottom-r{
 		height: 50%;
@@ -349,8 +345,14 @@
 		transition: opacity 1s ease;
 	}
 
-	.work-text h2,.work-text p{
+	.work-text h2{
 		text-align: center;
+		margin: 2rem 0 0 0;
+	}
+
+	.work-text p{
+		text-align: center;
+		margin: 1rem;
 	}
 
 
@@ -410,7 +412,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-
 		padding-right: 3em;
 		top: 0;
 		right: 0;
@@ -420,9 +421,7 @@
 		position: fixed;
 	}
 
-	.about-top p{
 
-	}
 
 	.about-middle{
 		height: auto;
@@ -435,7 +434,6 @@
 		padding: 8em 6em 4em 6em;
 	}
 	.about-bottom{
-		
 		transform: translateY(-10vh);
 		transition: 1.5s ease;
 		transition-delay: 1s;
@@ -450,15 +448,15 @@
 
 	.about-p{
 		text-align: center;
-		font-size: 2vh;
+		font-size: 1rem;
+		margin: 0 5rem 0 5rem;
 		
 	}
 
 	.about-img{
-		margin: -3em 0em 0 0em;
+		margin: -5em 0em 0 0em;
 		max-height: 47vh;
 		max-width: 80vw;
-		
 		justify-self: flex-start;
 		
 	}
@@ -521,14 +519,8 @@
 		position: absolute;
 	}
 
-
-
-
-
-
-
 	.contact-outer-none{
-		background-color: #BF4953;
+		background-color: #611427;
 		color: #F2F2E9;
 		height: 100vh;
 		width: 100vw;
@@ -545,7 +537,6 @@
 		transition: visibility .5s,opacity 1s ease;
 
 	}
-
 
 	.cir-menu{
 		position: relative;
@@ -710,7 +701,7 @@
 	}
 
 	.skills-list p{
-		font-size: .8em;
+		font-size: .5em;
 	}
 
 	.skills-list h2{
@@ -773,17 +764,16 @@
 	
 	.skill-bar-outer{
 		background-color: #7BA6A1;
-		height: 30px;
+		height: 20px;
 		width: 100%;
 		font-size: .8em;
 		box-sizing: border-box;		
 	}
 
 	.skill-bar-inner{
-		height: 30px;
+		height: 20px;
 		color: black;
 		position: relative;
-
 		background-color: #F1968D;
 		left: 0;
 		display: flex;
@@ -976,9 +966,6 @@
 
 
 /*/////////////////*/
-
-
-
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) { 
@@ -986,7 +973,7 @@
   		right: 0;
   		top: -80px;
   	}
-  	  	.navDescrip-min{
+  	.navDescrip-min{
   		right: 0;
   		top: -80px;
   	}
@@ -1008,6 +995,25 @@
   	.skill-bar-inner{
   		height: 20px;
   	}
+  	.skills-text{
+		position: relative;
+		margin: 0;
+		bottom: 10px;
+		font-size: .9em;
+	}
+	.about-p{
+		text-align: center;
+		font-size: 2vh;
+		
+	}
+	.about-img{
+		margin: -3em 0em 0 0em;
+		max-height: 47vh;
+		max-width: 80vw;
+		justify-self: flex-start;
+		
+	}
+
 
 
 }

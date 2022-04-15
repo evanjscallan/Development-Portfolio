@@ -65,7 +65,7 @@ export default function Work(props, styles) {
 							bgImage={orcaImg}
 							title="Orcahome"
 							wtf='https://orcasound.net' 
-							description="Front-End developer for React App. Coordinating with team to integrate front-end website with app."
+							description="Working with team to integrate listening conservation app (React) into front-end website."
 							bgAltText="Orca whales swimming in the ocean."/>
 					</div>
 				</article>

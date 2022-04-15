@@ -101,7 +101,6 @@ export default class Index extends React.Component {
 			backBtn={this.handleClick.bind(this)}
 			workState={setWorkVisible}
 		/>
-		
 		<head className={setContactVisible ? "hidden" : "index-middle"}>
 			<h1 className="font-primary title-text ">
 				Evan Scallan is a developer who makes smooth-running, responsive applications.
