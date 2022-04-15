@@ -81,6 +81,7 @@ export default class Index extends React.Component {
 		backBtn={this.handleContact.bind(this)}
 	/>
 	<About aboutState={setAboutVisible} backBtn={this.handleAbout.bind(this)} />
+	<div className='index-upper'>
 	<Nav 
 			navState={this.state.navState}
 			workState={setWorkVisible}
@@ -94,6 +95,7 @@ export default class Index extends React.Component {
 			backBtn={this.handleAbout.bind(this)} 
 
 			/>
+	</div>
 	<div className={setAboutVisible ? "index-outer" : "index-outer-none"}>
 		<Work
 			backBtn={this.handleClick.bind(this)}

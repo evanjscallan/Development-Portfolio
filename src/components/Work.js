@@ -22,11 +22,9 @@ export default function Work(props, styles) {
 					<div className='work-text'>
 					<h2 className="work-descrip">{props.title}</h2>
 					<p className="work-descrip">{props.description}</p>
-						
 							<Button
 							text="LEARN MORE"
 							worker={props.wtf}/>
-						
 					</div>
 				</div>
 				<img
@@ -50,9 +48,9 @@ export default function Work(props, styles) {
 					<div className="flex-ctr-col">
 						<WorkInfo
 							bgImage={healthImg}
-							title="Mental Health Finder"
+							title="MHFinder"
 							wtf='https://mhfinder.netlify.app/' 
-							description="Helps users find local mental heathcare providers in their area. Google Geocode/Maps API combined with data-mined directory."
+							description="Using Data Mining and Google APIs find local mental heathcare providers in their area."
 							bgAltText='The words "mental health" written on a clipboard.'/>
 					</div>
 				</article>
@@ -99,7 +97,7 @@ export default function Work(props, styles) {
 							bgImage={languageImg}
 							title="The Emissary"
 							wtf='https://emissarytranslator.herokuapp.com/' 
-							description="Language translator with a retro twist. Deployed on Heroku."
+							description="Language translator with a retro twist. Deployed with Flask on Heroku."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
 				</article>
