@@ -6,12 +6,7 @@ import healthImg from "./../img/mh_placeholder_tablet.webp";
 import battleImg from "./../img/battle_desktop_orange.webp";
 import "./../css/styles.css";
 import PropTypes from 'prop-types'
-
-
 import { AiOutlineCloseCircle } from "react-icons/ai";
-
-
-
 
 export default function Work(props, styles) {
 	const setWorkVisible = props.workState;
@@ -87,7 +82,7 @@ export default function Work(props, styles) {
 						<WorkInfo
 							bgImage={battleImg}
 							title="Github Battle"
-							wtf='https://github.com' 
+							wtf='https://boisterous-mochi-7610a3.netlify.app/' 
 							description="It's Battle time. Utilizing React and Github API to compare user data in the form of a game."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
