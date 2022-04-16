@@ -4,7 +4,6 @@ import indexImg from "./../img/profile/about_front_photo.jpeg";
 import Contact from "./Contact";
 import Work from "./Work";
 import About from "./About";
-import Button from "./Button";
 import Nav from "./Nav";
 
 export default class Index extends React.Component {
@@ -66,8 +65,7 @@ export default class Index extends React.Component {
 		}));
 	}
 	render(props) {
-		let handleWork = this.handleClick;
-		let { setWorkVisible, setAboutVisible, setContactVisible, navState } =
+		let { setWorkVisible, setAboutVisible, setContactVisible } =
 			this.state;
 		return (
 			<div>

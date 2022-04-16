@@ -9,11 +9,6 @@ import "./../css/styles.css";
 
 
 function Nav(props, contactState) {
-	//have parent handle state?
-	//need to change navState when any of the buttons are clicked
-	//maybe set A to recieve props instead?
-	const setContactVisible = props.contactState;
-	const backBtn = props.backBtn;
 	/*Contact Page* == TOP SECTION | Nav Bar == BOTTOM SECTION */
 	return (
 		<React.Fragment>

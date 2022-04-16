@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "./Button";
 import orcaImg from "./../img/work/orcamac.webp";
 import languageImg from "./../img/work/emis_mockup.webp";
 import healthImg from "./../img/work/mh_placeholder_tablet.webp";
 import battleImg from "./../img/work/battle_desktop_orange.webp";
 import "./../css/styles.css";
-import PropTypes from 'prop-types'
-import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export default function Work(props, styles) {
 	const setWorkVisible = props.workState;

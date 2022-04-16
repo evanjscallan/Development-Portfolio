@@ -1,17 +1,14 @@
 import React from 'react';
-import { Planet } from 'react-planet';
+
 import instagram from './../img/social/instagram.svg'
 import google from './../img/social/google.svg'
 import flickr from './../img/social/flickr.svg'
 import github from './../img/social/github.svg'
 import linkedin from './../img/social/linkedin.svg'
-import useIsInViewport from 'use-is-in-viewport'
-import { AiOutlineCloseCircle } from 'react-icons/ai'
-import hamburger from './../img/nav/Hamburger.svg'
 import xMark from './../img/nav/x.svg'
 
 
-import Nav from './Nav.js'
+
 
 export default function Contact(props, contactState){
 	const [isInViewport, targetRef] = useIsInViewport()

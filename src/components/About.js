@@ -1,17 +1,16 @@
 import React from "react";
 
-import Button from "./Button";
+
 import "./../css/styles.css";
 
 import { GiMagicBroom } from "react-icons/gi";
 import { MdPhoneInTalk, MdDashboardCustomize } from "react-icons/md";
-import { FaTools } from "react-icons/fa";
 import { BsChevronExpand } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
 import aboutImg from "./../img/profile/evanscallan.png";
 
-import Draggable, { DraggableCore } from "react-draggable"; // Both at the same time
+import Draggable from "react-draggable"; // Both at the same time
 
 const skills = [
 	{ skillAtt: "Javascript", skillLvl: "80%" },
@@ -29,7 +28,6 @@ export default class About extends React.Component {
 		super(props);
 	}
 	render(props) {
-		const backBtn = this.props.backBtn;
 		const setAboutVisible = this.props.aboutState;
 		return (
 			<div className="about-outer">
