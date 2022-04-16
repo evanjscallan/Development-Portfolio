@@ -11,7 +11,7 @@ import xMark from './../img/nav/x.svg'
 
 
 export default function Contact(props, contactState){
-	const [isInViewport, targetRef] = null
+	const [targetRef] = null
 	const setContactVisible = props.contactState
 	const backBtn=props.backBtn
 
