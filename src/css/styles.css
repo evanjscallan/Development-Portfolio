@@ -1,8 +1,3 @@
-
-
-
-
-
 /*FONTS*/
 	.font-primary{
 		font-size: 4vh;
@@ -204,7 +199,6 @@
 		transition: visibility .5s, opacity 1s ease;
 	}
 
-
 /*INDEX TOP*/
 	.index-upper{
 		top: 0;
@@ -212,7 +206,6 @@
 		width: 100%;
 		position: absolute;
 	}
-
 
 /*INDEX MIDDLE*/
 	.index-middle{
@@ -267,7 +260,6 @@
 	}
 
 /*WORK*/
-
 
 	.work-bottom-l{
 		height: 50%;
@@ -466,7 +458,6 @@
 		text-align: center;
 	}
 
-
 /*CONTACT*/
 	
 
@@ -660,7 +651,6 @@
 					3px 3px 3px 3px rgba(0,0,0,0.2);
 	}
 
-
 /*SKILLS*/
 	
 	.handle-button{
@@ -790,7 +780,6 @@
 		font-size: 1rem;
 		color: black;
 	}
-
 
 /*NAV*/
 	.nav-menu{
@@ -961,109 +950,58 @@
 		transition: 1s ease;
 	}
 
+/*MEDIA QUERIES*/
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 812px) { 
+	  	.navDescripA, .navDescripB, .navDescripC, .navDescriptD{
+	  		right: 0;
+	  		top: -80px;
+	  	}
+	  	.navDescrip-min{
+	  		right: 0;
+	  		top: -80px;
+	  	}
+	  	.work-text{
+	  		top: -60px;
+	  	}
+	  	.work-descrip{
+	  		position: relative;
+	  		margin: 10px;
+	  	}
+	  	.list-ind{
+	  		font-size: 1rem;
+	  	}
+	  	.skill-bar-outer{
+	  		height: 20px;
+	  		left: 10px;
+	  		width: 80%;
+	  	}
+	  	.skill-bar-inner{
+	  		height: 20px;
+	  	}
+	  	.skills-text{
+			position: relative;
+			margin: 0;
+			bottom: 10px;
+			font-size: .9em;
+		}
+		.about-p{
+			text-align: center;
+			font-size: 2vh;
+			
+		}
+		.about-img{
+			margin: -3em 0em 0 0em;
+			max-height: 47vh;
+			max-width: 80vw;
+			justify-self: flex-start;
+			
+		}
 
 
 
-
-/*/////////////////*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) { 
-  	.navDescripA, .navDescripB, .navDescripC, .navDescriptD{
-  		right: 0;
-  		top: -80px;
-  	}
-  	.navDescrip-min{
-  		right: 0;
-  		top: -80px;
-  	}
-  	.work-text{
-  		top: -60px;
-  	}
-  	.work-descrip{
-  		position: relative;
-  		margin: 10px;
-  	}
-  	.list-ind{
-  		font-size: 1rem;
-  	}
-  	.skill-bar-outer{
-  		height: 20px;
-  		left: 10px;
-  		width: 80%;
-  	}
-  	.skill-bar-inner{
-  		height: 20px;
-  	}
-  	.skills-text{
-		position: relative;
-		margin: 0;
-		bottom: 10px;
-		font-size: .9em;
 	}
-	.about-p{
-		text-align: center;
-		font-size: 2vh;
-		
-	}
-	.about-img{
-		margin: -3em 0em 0 0em;
-		max-height: 47vh;
-		max-width: 80vw;
-		justify-self: flex-start;
-		
-	}
-
-
-
-}
-
-
-/*
-.list-ind{
-		font-size: 2rem;
-		margin-left: 3rem;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;	
-		text-align: left;
-		width: 80%;
-		color: white;
-	}
-	}
-
-	.skill-bar-outer{
-		background-color: #7BA6A1;
-		height: 30px;
-		width: 100%;
-		font-size: .8em;
-		box-sizing: border-box;		
-	}
-
-	.skill-bar-inner{
-		height: 30px;
-		color: black;
-		position: relative;
-
-		background-color: #F1968D;
-		left: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		box-sizing: border-box;
-		
-	}
-
-	.skill-bar-inner p{
-		font-weight: 800;
-		left: 0;
-		font-size: 1rem;
-		color: black;
-	}
-
-	*/
 
 
 

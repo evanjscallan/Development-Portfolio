@@ -7,8 +7,8 @@ import github from './../img/social/github.svg'
 import linkedin from './../img/social/linkedin.svg'
 import useIsInViewport from 'use-is-in-viewport'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
-import hamburger from './../img/Hamburger.svg'
-import xMark from './../img/x.svg'
+import hamburger from './../img/nav/Hamburger.svg'
+import xMark from './../img/nav/x.svg'
 
 
 import Nav from './Nav.js'

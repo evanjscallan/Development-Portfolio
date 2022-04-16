@@ -1,22 +1,19 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import orcaImg from "./../img/orca_macbook.webp";
-import languageImg from "./../img/emis_mockup.webp";
-import healthImg from "./../img/mh_placeholder_tablet.webp";
-import battleImg from "./../img/battle_desktop_orange.webp";
+import orcaImg from "./../img/work/orcamac.webp";
+import languageImg from "./../img/work/emis_mockup.webp";
+import healthImg from "./../img/work/mh_placeholder_tablet.webp";
+import battleImg from "./../img/work/battle_desktop_orange.webp";
 import "./../css/styles.css";
 import PropTypes from 'prop-types'
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export default function Work(props, styles) {
 	const setWorkVisible = props.workState;
-
 	const WorkInfo = (props) => {
 		console.log("SITELINK PROPS: " + props.wtf)
-	
 	return (
 		<React.Fragment>
-			
 			<div className="work-background-image">
 				<div className='work-overlay'>
 					<div className='work-text'>
@@ -35,9 +32,7 @@ export default function Work(props, styles) {
 	);
 };
 
-	return (
-		
-			
+	return (	
 			<section>
 				<article 
 				className="work-bottom-l"
@@ -69,8 +64,6 @@ export default function Work(props, styles) {
 							bgAltText="Orca whales swimming in the ocean."/>
 					</div>
 				</article>
-
-
 				<article className="work-top-l"
 						style={
 						setWorkVisible
@@ -85,7 +78,6 @@ export default function Work(props, styles) {
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
 				</article>
-
 				<article className="work-top-r"
 						style={
 						setWorkVisible
