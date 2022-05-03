@@ -9,6 +9,8 @@ import { BsChevronExpand } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
 import aboutImg from "./../img/profile/evanscallan.png";
+import aboutVid from "./../img/profile/about_blue.mp4"
+import aboutGif from "./../img/profile/about_blue.gif"
 
 import Draggable from "react-draggable"; // Both at the same time
 
@@ -32,10 +34,7 @@ export default class About extends React.Component {
 		return (
 			<div className="about-outer">
 				<div className="about-middle">
-					<img
-						className="about-img"
-						src={aboutImg}
-						alt="Evan playing piano in an 8-bit universe."/>
+					<img src={aboutGif} className='about-img'></img>
 					<div className=" flex-col-ctr about-p prim">
 						<p>
 							I'm a full-stack developer, musician, avid hiker,
@@ -177,3 +176,9 @@ export default class About extends React.Component {
 		);
 	}
 }
+
+
+/*
+<video className='about-img'  muted="muted"  defaultMuted playsinline autoplay="autoplay" loop="loop" oncontextmenu="return false;"  preload="auto"  id="myVideo">
+						<source  src={aboutVid} type='video/mp4'/>
+					</video>*/
