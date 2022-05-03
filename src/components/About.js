@@ -33,7 +33,7 @@ export default class About extends React.Component {
 		return (
 			<div className="about-outer">
 				<div className="about-middle">
-					<img src={aboutGif} className='about-img'></img>
+					<img src={aboutGif} className='about-img' alt='Evan playing an 8-bit piano'></img>
 					<div className=" flex-col-ctr about-p prim">
 						<p>
 							I'm a full-stack developer, musician, avid hiker,
