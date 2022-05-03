@@ -8,8 +8,7 @@ import { MdPhoneInTalk, MdDashboardCustomize } from "react-icons/md";
 import { BsChevronExpand } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
-import aboutImg from "./../img/profile/evanscallan.png";
-import aboutVid from "./../img/profile/about_blue.mp4"
+
 import aboutGif from "./../img/profile/about_blue.gif"
 
 import Draggable from "react-draggable"; // Both at the same time
