@@ -8,10 +8,10 @@ import xMark from "./../img/nav/x.svg";
 import "./../css/styles.css";
 
 
-function Nav(props, contactState) {
+const Nav = (props, contactState) => {
 	/*Contact Page* == TOP SECTION | Nav Bar == BOTTOM SECTION */
 	return (
-		<React.Fragment>
+		<>
 			<nav
 				className={props.contactState ? "nav-menu hidden" : "nav-menu"}>
 				<span
@@ -51,7 +51,7 @@ function Nav(props, contactState) {
 					</p>
 				</div>
 			</nav>
-		</React.Fragment>
+		</>
 	);
 }
 

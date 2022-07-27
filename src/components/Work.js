@@ -11,7 +11,7 @@ export default function Work(props, styles) {
 	const WorkInfo = (props) => {
 		console.log("SITELINK PROPS: " + props.wtf)
 	return (
-		<React.Fragment>
+		<>
 			<div className="work-background-image">
 				<div className='work-overlay'>
 					<div className='work-text'>
@@ -26,7 +26,7 @@ export default function Work(props, styles) {
 					src={props.bgImage}
 					alt={props.bgAltText}/>
 				</div>	
-		</React.Fragment>
+		</>
 	);
 };
 
@@ -43,7 +43,7 @@ export default function Work(props, styles) {
 							bgImage={healthImg}
 							title="MHFinder"
 							wtf='https://mhfinder.netlify.app/' 
-							description="Using Data Mining and Google APIs find local mental heathcare providers in their area."
+							description="Combining data mining & mapping APIs to locate mental health services in California."
 							bgAltText='The words "mental health" written on a clipboard.'/>
 					</div>
 				</article>
@@ -58,7 +58,7 @@ export default function Work(props, styles) {
 							bgImage={orcaImg}
 							title="Orcahome"
 							wtf='https://orcasound.net' 
-							description="Working with team to integrate listening conservation app (React) into front-end website."
+							description="Save the whales. Integrating front and back-end tech for an orca whale detection app."
 							bgAltText="Orca whales swimming in the ocean."/>
 					</div>
 				</article>
@@ -72,7 +72,7 @@ export default function Work(props, styles) {
 							bgImage={battleImg}
 							title="Github Battle"
 							wtf='https://boisterous-mochi-7610a3.netlify.app/' 
-							description="It's Battle time. Utilizing React and Github API to compare user data in the form of a game."
+							description="It's Battle time. React and Github API-based game that compares user data."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
 				</article>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import instagram from './../img/social/instagram.svg'
 import google from './../img/social/google.svg'
@@ -7,19 +7,48 @@ import github from './../img/social/github.svg'
 import linkedin from './../img/social/linkedin.svg'
 import xMark from './../img/nav/x.svg'
 
+let contactPhrases = [
+  "Let's get in touch.", "Kontaktiere mich", "Let's have a conversation.",
+  "Contáctame", "Let's communicate.", "Bana ulaşın",
+  "Wanna Talk?", "让我们谈谈",
+  "Vil du snakke med meg?",
+  "Let's have coffee.", "Կապվեք ինձ հետ", "Hit me up.",
+  "Επικοινώνησε μαζί μου", "Dost thou need to speak?", "Свяжитесь со мной",
+  "저에게 연락", "Let's talk.", "ما سره اړیکه ونیسئ", "Comments/questions/queries?",
+  "Liên hệ với tôi", "What's up?", "Зв'яжіться зі мною", "Contact me.",
+  "चल बात करते है", "Send a carrier pidgeon",
+  "Contactez moi", "צור איתי קשר",
+  "Reach out.", "اتصل بي", "私に連絡して"]
 
 
 
-export default function Contact(props, contactState){
+const Contact = (props) => {
 	const [targetRef] = ""
 	const setContactVisible = props.contactState
-	const backBtn=props.backBtn
+	const backBtn = props.backBtn
+	const [index, setIndex] = useState(0)
+	const [phrase, setPhrase] = useState(contactPhrases[index])
+
+	//timer effect
+	useEffect(() => {
+	  //index integer cycles through entire length of contactPhrases
+	  const timer = setInterval(() => setIndex(i => (i + 1) % contactPhrases.length), 1000);
+	  //cleanup after each iteration
+	  return () => clearInterval(timer)
+	}, [])
+	 //uses the changing index number from the previous useEffect to cycle through the phrases
+	useEffect(() => {
+	  setPhrase(contactPhrases[index])
+	}, [index])
+
 
 
 		return(	
-		<React.Fragment>
+		<>
 			<address className={setContactVisible ? 'contact-outer' : 'contact-outer-none'}>	
-			<h1 className='contact-head-text'>Let's get in touch.</h1>
+			<h1 className='contact-head-text'>{phrase}</h1>
+		
+			
 			<div   className='menu-container'></div>
 			<div className='cir-menu'>
 				<span ref={targetRef} className={props.contactState ? 'cir-a': 'cir-a-min'}>
@@ -41,28 +70,9 @@ export default function Contact(props, contactState){
 			</div>
 		</address>
 		
-	</React.Fragment>
+	</>
 		)
 	
 }
 
-
-
-
-
-/*USE THIS
-       					<div>
-			        		<a href='https://www.instagram.com/evan_scallan/'><img className='contact-icon' src={instagram} alt='Instagram icon'></img></a>
-			        	</div>
-			        	<div>
-			        		
-			        	</div>
-			        	<div>
-			        		
-			        	</div>
-			        	<div>
-			        		
-			        	</div>
-			            <div>
-			            	<a href='https://www.flickr.com/people/142014826@N07/'><img className='contact-icon' src={flickr} alt='Email icon'></img></a>
-			            </div>*/
+export default Contact;

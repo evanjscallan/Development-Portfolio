@@ -102,14 +102,14 @@ export default class Index extends React.Component {
 							backBtn={this.handleClick.bind(this)}
 							workState={setWorkVisible}
 						/>
-						<head
+						<header
 							className={
 								setContactVisible ? "hidden" : "index-middle"
 							}
 						>
 							<h1 className="font-primary title-text ">
-								Evan Scallan is a developer who makes
-								smooth-running, responsive applications.
+								Evan Scallan is a software engineer who builds
+								efficient, responsive applications.
 							</h1>
 							<img className="index-img" src={indexImg} alt="" />
 							<button
@@ -118,7 +118,7 @@ export default class Index extends React.Component {
 							>
 								VIEW MORE
 							</button>
-						</head>
+						</header>
 					</div>
 				</React.Fragment>
 			</div>
