@@ -15,9 +15,9 @@ import Draggable from "react-draggable"; // Both at the same time
 
 const skills = [
 	{ skillAtt: "Javascript", skillLvl: "80%" },
-	{ skillAtt: "Python", skillLvl: "70%" },
+	{ skillAtt: "Python", skillLvl: "65%" },
 	{ skillAtt: "React", skillLvl: "80%" },
-	{ skillAtt: "Javascript", skillLvl: "75%" },
+	{ skillAtt: "Javascript", skillLvl: "65%" },
 	{ skillAtt: "API Integration", skillLvl: "50%" },
 	{ skillAtt: "SASS/CSS", skillLvl: "80%" },
 	{ skillAtt: "Flask", skillLvl: "55%" },
@@ -38,7 +38,7 @@ export default class About extends React.Component {
 						<p>
 							I'm a full-stack developer, musician, avid hiker,
 							and photographer based out of Dallas, TX. My goal is
-							to cultivate seamless applications through practical
+							to build purposeful software through practical
 							and creative coding. I also enjoy long walks on
 							beaches, cats, and getting frustrated on Stack
 							Overload.
@@ -126,7 +126,7 @@ export default class About extends React.Component {
 										</div>
 									</span>
 									<span className="list-ind">
-										<p>API Integration</p>
+										<p>REST, GraphQL</p>
 										<div className="skill-bar-outer">
 											<div
 												style={{ width: skills[3].skillLvl }}
