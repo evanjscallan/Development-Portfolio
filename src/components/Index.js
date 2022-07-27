@@ -109,7 +109,7 @@ export default class Index extends React.Component {
 						>
 							<h1 className="font-primary title-text ">
 								Evan Scallan is a software engineer who builds
-								efficient, responsive applications.
+								efficient, purpose-driven applications.
 							</h1>
 							<img className="index-img" src={indexImg} alt="" />
 							<button
