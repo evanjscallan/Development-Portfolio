@@ -4,6 +4,7 @@ import orcaImg from "./../img/work/orcamac.webp";
 import languageImg from "./../img/work/emis_mockup.webp";
 import healthImg from "./../img/work/mh_placeholder_tablet.webp";
 import battleImg from "./../img/work/battle_desktop_orange.webp";
+import firebrickImg from "./../img/work/firebrickImg.webp";
 import "./../css/styles.css";
 
 export default function Work(props, styles) {
@@ -84,10 +85,10 @@ export default function Work(props, styles) {
 					
 					<div className="flex-ctr-col">
 						<WorkInfo
-							bgImage={languageImg}
-							title="The Emissary"
+							bgImage={firebrickImg}
+							title="Firebrick Brightroom"
 							wtf='https://emissarytranslator.herokuapp.com/' 
-							description="Language translator with a retro twist. Deployed with Flask on Heroku."
+							description="In-browser Image editing application built in React. Not affiliated with Adobe or any of its products."
 							bgAltText="Application mockup on devices for github battle"/>
 					</div>
 				</article>
