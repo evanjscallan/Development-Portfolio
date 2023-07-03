@@ -19,9 +19,9 @@ const skills = [
 	{ skillAtt: "React", skillLvl: "80%" },
 	{ skillAtt: "Javascript", skillLvl: "65%" },
 	{ skillAtt: "API Integration", skillLvl: "50%" },
-	{ skillAtt: "SASS/CSS", skillLvl: "80%" },
+	{ skillAtt: "Typescript", skillLvl: "80%" },
 	{ skillAtt: "Flask", skillLvl: "55%" },
-	{ skillAtt: "SQLite", skillLvl: "65%" },
+	{ skillAtt: "Angular", skillLvl: "35%" },
 ];
 
 export default class About extends React.Component {
@@ -39,8 +39,8 @@ export default class About extends React.Component {
 							I'm a full-stack developer, musician, avid hiker,
 							and photographer based out of Dallas, TX. My goal is
 							to build purposeful software through practical
-							and creative coding. I also enjoy long walks on
-							beaches, cats, and getting frustrated on Stack
+							and creative coding. I'm currently employed with <b><i>Dialexa, an IBM company</i></b>. I also enjoy long walks on
+							beaches, cats, and getting frustrated with Stack
 							Overload.
 						</p>
 
